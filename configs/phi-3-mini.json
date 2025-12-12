@@ -10,11 +10,12 @@
     "configuration": {
         "name": "Phi-3 Mini (Microsoft Compact)",
         "slug": "phi-3-mini",
-        "provider_id": 1,
+        "provider": "ollama",
         "model_name": "phi3:mini",
         "description": "Microsoft's compact yet powerful model - optimized for efficiency and speed",
         "api_endpoint": "http://localhost:11434/api/chat",
         "default_parameters": {
+            "max_tokens": 2048,
             "temperature": 0.7,
             "top_p": 0.95,
             "top_k": 40,
@@ -39,8 +40,9 @@
             "recommended_ram_gb": 8
         },
         "pricing": {
-            "currency": "FREE",
-            "cost_per_token": 0,
+            "currency": "XXX",
+            "input_per_1k_tokens": 0.0,
+            "output_per_1k_tokens": 0.0,
             "note": "Self-hosted, no API costs"
         },
         "recommended_use_cases": [

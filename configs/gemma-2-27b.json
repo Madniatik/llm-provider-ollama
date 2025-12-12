@@ -10,11 +10,12 @@
     "configuration": {
         "name": "Gemma 2 27B (Google)",
         "slug": "gemma-2-27b",
-        "provider_id": 1,
+        "provider": "ollama",
         "model_name": "gemma2:27b",
         "description": "Google's efficient 27B model - excellent performance with optimized resource usage",
         "api_endpoint": "http://localhost:11434/api/chat",
         "default_parameters": {
+            "max_tokens": 3072,
             "temperature": 0.7,
             "top_p": 0.95,
             "top_k": 64,
@@ -39,8 +40,9 @@
             "recommended_ram_gb": 32
         },
         "pricing": {
-            "currency": "FREE",
-            "cost_per_token": 0,
+            "currency": "XXX",
+            "input_per_1k_tokens": 0.0,
+            "output_per_1k_tokens": 0.0,
             "note": "Self-hosted, no API costs"
         },
         "recommended_use_cases": [

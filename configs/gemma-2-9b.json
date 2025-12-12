@@ -10,11 +10,12 @@
     "configuration": {
         "name": "Gemma 2 9B (Lightweight Google)",
         "slug": "gemma-2-9b",
-        "provider_id": 1,
+        "provider": "ollama",
         "model_name": "gemma2:9b",
         "description": "Compact Google model - fast and efficient for everyday tasks",
         "api_endpoint": "http://localhost:11434/api/chat",
         "default_parameters": {
+            "max_tokens": 2048,
             "temperature": 0.7,
             "top_p": 0.95,
             "top_k": 64,
@@ -39,8 +40,9 @@
             "recommended_ram_gb": 12
         },
         "pricing": {
-            "currency": "FREE",
-            "cost_per_token": 0,
+            "currency": "XXX",
+            "input_per_1k_tokens": 0.0,
+            "output_per_1k_tokens": 0.0,
             "note": "Self-hosted, no API costs"
         },
         "recommended_use_cases": [
