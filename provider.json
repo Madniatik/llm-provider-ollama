@@ -1,8 +1,8 @@
 {
   "name": "llm-provider-ollama",
   "display_name": "Ollama Provider",
-  "version": "0.1.0",
-  "description": "Local LLM provider using Ollama",
+  "version": "0.2.0",
+  "description": "Full Ollama provider package with ServiceProvider, migrations, seeders, routes, and views. Includes 10 pre-configured models (Llama, Mistral, CodeLlama, Gemma, Phi, DeepSeek)",
   "author": "Bithoven Team",
   "license": "MIT",
   "repository": "https://github.com/bithoven/llm-provider-ollama",
@@ -14,8 +14,12 @@
   "requires": {
     "llm-manager": ">=0.4.0"
   },
-  "providers": [],
+  "providers": [
+    "Bithoven\\LLMProviderOllama\\OllamaServiceProvider"
+  ],
   "autoload": {
-    "psr-4": {}
+    "psr-4": {
+      "Bithoven\\LLMProviderOllama\\": "src/"
+    }
   }
 }
