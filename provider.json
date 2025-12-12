@@ -1,0 +1,21 @@
+{
+  "name": "llm-provider-ollama",
+  "display_name": "Ollama Provider",
+  "version": "0.1.0",
+  "description": "Local LLM provider using Ollama",
+  "author": "Bithoven Team",
+  "license": "MIT",
+  "repository": "https://github.com/bithoven/llm-provider-ollama",
+  "homepage": "https://ollama.ai",
+  "support": {
+    "docs": "https://github.com/bithoven/llm-provider-ollama/wiki",
+    "issues": "https://github.com/bithoven/llm-provider-ollama/issues"
+  },
+  "requires": {
+    "llm-manager": ">=0.4.0"
+  },
+  "providers": [],
+  "autoload": {
+    "psr-4": {}
+  }
+}
