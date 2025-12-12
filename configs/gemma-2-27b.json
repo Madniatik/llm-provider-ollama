@@ -1,0 +1,62 @@
+{
+    "$schema": "https://bithoven.dev/schemas/llm-config-v1.json",
+    "version": "0.1.0",
+    "metadata": {
+        "package": "bithoven/llm-provider-ollama",
+        "created_at": "2025-12-12T04:00:00Z",
+        "updated_at": "2025-12-12T04:00:00Z",
+        "author": "Bithoven Team"
+    },
+    "configuration": {
+        "name": "Gemma 2 27B (Google)",
+        "slug": "gemma-2-27b",
+        "provider_id": 1,
+        "model_name": "gemma2:27b",
+        "description": "Google's efficient 27B model - excellent performance with optimized resource usage",
+        "api_endpoint": "http://localhost:11434/api/chat",
+        "default_parameters": {
+            "temperature": 0.7,
+            "top_p": 0.95,
+            "top_k": 64,
+            "num_predict": 3072,
+            "repeat_penalty": 1.1,
+            "seed": null,
+            "stop": null
+        },
+        "capabilities": [
+            "text-generation",
+            "instruction-following",
+            "reasoning",
+            "code-generation",
+            "chat",
+            "streaming"
+        ],
+        "limits": {
+            "context_window": 8192,
+            "max_output_tokens": 3072,
+            "model_size_gb": 16,
+            "min_ram_gb": 20,
+            "recommended_ram_gb": 32
+        },
+        "pricing": {
+            "currency": "FREE",
+            "cost_per_token": 0,
+            "note": "Self-hosted, no API costs"
+        },
+        "recommended_use_cases": [
+            "Production chatbots",
+            "Content generation",
+            "Instruction following",
+            "Reasoning tasks",
+            "Multi-turn conversations"
+        ],
+        "tags": ["recommended", "google", "efficient", "production-ready", "gemma"],
+        "is_active": true,
+        "is_default": false,
+        "hardware_requirements": {
+            "gpu": "Recommended (20GB+ VRAM or Apple Silicon M2 Pro/Max)",
+            "cpu": "Modern multi-core processor",
+            "disk_space": "16GB"
+        }
+    }
+}

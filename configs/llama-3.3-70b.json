@@ -1,0 +1,62 @@
+{
+    "$schema": "https://bithoven.dev/schemas/llm-config-v1.json",
+    "version": "0.1.0",
+    "metadata": {
+        "package": "bithoven/llm-provider-ollama",
+        "created_at": "2025-12-12T04:00:00Z",
+        "updated_at": "2025-12-12T04:00:00Z",
+        "author": "Bithoven Team"
+    },
+    "configuration": {
+        "name": "Llama 3.3 70B (Recommended)",
+        "slug": "llama-3-3-70b",
+        "provider_id": 1,
+        "model_name": "llama3.3:70b",
+        "description": "Meta's latest and most powerful Llama model - exceptional reasoning and instruction following",
+        "api_endpoint": "http://localhost:11434/api/chat",
+        "default_parameters": {
+            "temperature": 0.7,
+            "top_p": 0.9,
+            "top_k": 40,
+            "num_predict": 4096,
+            "repeat_penalty": 1.1,
+            "seed": null,
+            "stop": null
+        },
+        "capabilities": [
+            "text-generation",
+            "instruction-following",
+            "reasoning",
+            "creative-writing",
+            "code-generation",
+            "streaming"
+        ],
+        "limits": {
+            "context_window": 128000,
+            "max_output_tokens": 4096,
+            "model_size_gb": 40,
+            "min_ram_gb": 48,
+            "recommended_ram_gb": 64
+        },
+        "pricing": {
+            "currency": "FREE",
+            "cost_per_token": 0,
+            "note": "Self-hosted, no API costs"
+        },
+        "recommended_use_cases": [
+            "Complex reasoning tasks",
+            "Long-form content generation",
+            "Code generation and review",
+            "Technical documentation",
+            "Research and analysis"
+        ],
+        "tags": ["recommended", "large-model", "production-ready", "meta", "llama"],
+        "is_active": true,
+        "is_default": false,
+        "hardware_requirements": {
+            "gpu": "Recommended (NVIDIA with 40GB+ VRAM or Apple Silicon M2 Max/Ultra)",
+            "cpu": "Modern multi-core processor",
+            "disk_space": "40GB"
+        }
+    }
+}

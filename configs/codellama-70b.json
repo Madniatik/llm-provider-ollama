@@ -1,0 +1,63 @@
+{
+    "$schema": "https://bithoven.dev/schemas/llm-config-v1.json",
+    "version": "0.1.0",
+    "metadata": {
+        "package": "bithoven/llm-provider-ollama",
+        "created_at": "2025-12-12T04:00:00Z",
+        "updated_at": "2025-12-12T04:00:00Z",
+        "author": "Bithoven Team"
+    },
+    "configuration": {
+        "name": "CodeLlama 70B (Code Expert)",
+        "slug": "codellama-70b",
+        "provider_id": 1,
+        "model_name": "codellama:70b",
+        "description": "Meta's largest code-specialized model - expert-level code generation and understanding",
+        "api_endpoint": "http://localhost:11434/api/chat",
+        "default_parameters": {
+            "temperature": 0.3,
+            "top_p": 0.95,
+            "top_k": 40,
+            "num_predict": 4096,
+            "repeat_penalty": 1.0,
+            "seed": null,
+            "stop": ["```\n", "\n\n\n"]
+        },
+        "capabilities": [
+            "code-generation",
+            "code-completion",
+            "code-review",
+            "debugging",
+            "refactoring",
+            "documentation",
+            "streaming"
+        ],
+        "limits": {
+            "context_window": 100000,
+            "max_output_tokens": 4096,
+            "model_size_gb": 39,
+            "min_ram_gb": 48,
+            "recommended_ram_gb": 64
+        },
+        "pricing": {
+            "currency": "FREE",
+            "cost_per_token": 0,
+            "note": "Self-hosted, no API costs"
+        },
+        "recommended_use_cases": [
+            "Complex code generation",
+            "Code refactoring",
+            "Bug fixing",
+            "Technical documentation",
+            "Code review and analysis"
+        ],
+        "tags": ["recommended", "code-generation", "large-model", "expert", "meta", "codellama"],
+        "is_active": true,
+        "is_default": false,
+        "hardware_requirements": {
+            "gpu": "Required (40GB+ VRAM or Apple Silicon M2 Max/Ultra)",
+            "cpu": "Modern multi-core processor",
+            "disk_space": "40GB"
+        }
+    }
+}

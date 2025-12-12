@@ -1,0 +1,62 @@
+{
+    "$schema": "https://bithoven.dev/schemas/llm-config-v1.json",
+    "version": "0.1.0",
+    "metadata": {
+        "package": "bithoven/llm-provider-ollama",
+        "created_at": "2025-12-12T04:00:00Z",
+        "updated_at": "2025-12-12T04:00:00Z",
+        "author": "Bithoven Team"
+    },
+    "configuration": {
+        "name": "Phi-3 Mini (Microsoft Compact)",
+        "slug": "phi-3-mini",
+        "provider_id": 1,
+        "model_name": "phi3:mini",
+        "description": "Microsoft's compact yet powerful model - optimized for efficiency and speed",
+        "api_endpoint": "http://localhost:11434/api/chat",
+        "default_parameters": {
+            "temperature": 0.7,
+            "top_p": 0.95,
+            "top_k": 40,
+            "num_predict": 2048,
+            "repeat_penalty": 1.15,
+            "seed": null,
+            "stop": null
+        },
+        "capabilities": [
+            "text-generation",
+            "instruction-following",
+            "reasoning",
+            "chat",
+            "code-assistance",
+            "streaming"
+        ],
+        "limits": {
+            "context_window": 128000,
+            "max_output_tokens": 2048,
+            "model_size_gb": 2.3,
+            "min_ram_gb": 4,
+            "recommended_ram_gb": 8
+        },
+        "pricing": {
+            "currency": "FREE",
+            "cost_per_token": 0,
+            "note": "Self-hosted, no API costs"
+        },
+        "recommended_use_cases": [
+            "Edge deployments",
+            "Mobile applications",
+            "Quick prototyping",
+            "Resource-constrained environments",
+            "Educational content"
+        ],
+        "tags": ["recommended", "microsoft", "compact", "efficient", "phi"],
+        "is_active": true,
+        "is_default": false,
+        "hardware_requirements": {
+            "gpu": "Optional (CPU-capable)",
+            "cpu": "Any modern processor",
+            "disk_space": "2.5GB"
+        }
+    }
+}

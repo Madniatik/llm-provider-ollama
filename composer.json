@@ -1,0 +1,42 @@
+{
+    "name": "bithoven/llm-provider-ollama",
+    "description": "Ollama provider configurations for Bithoven LLM Manager - Local LLM models (Llama, Mistral, CodeLlama, Gemma, Phi, DeepSeek)",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.1.0",
+    "keywords": [
+        "bithoven",
+        "llm",
+        "ollama",
+        "llama",
+        "mistral",
+        "local-models",
+        "ai",
+        "machine-learning",
+        "configuration"
+    ],
+    "authors": [
+        {
+            "name": "Bithoven Team",
+            "email": "dev@bithoven.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2|^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bithoven\\LLMProviderOllama\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "bithoven": {
+            "type": "llm-provider-package",
+            "provider": "ollama",
+            "configs-path": "configs/",
+            "prompts-path": "prompts/"
+        }
+    }
+}
